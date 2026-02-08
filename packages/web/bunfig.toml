@@ -1,0 +1,11 @@
+[test]
+coverage = true
+coverageDir = "coverage"
+coveragePathIgnorePatterns = ["node_modules", "dist"]
+coverageReporter = ["lcov","text"]
+coverageSkipTestFiles = false
+coverageThreshold = { statements = 0.9, lines = 0.9, functions = 0.9, branches = 0.9 }
+preload = []
+root = "./__tests__"
+smol = false
+timeout = 10000
