@@ -1,0 +1,33 @@
+telemetry = false
+
+smol = false
+
+preload = []
+
+jsx = "react"
+jsxFactory = "h"
+jsxFragment = "Fragment"
+jsxImportSource = "react"
+
+[run]
+bun = true
+shell = "system"
+
+[install]
+production = false
+peer = true
+dev = true
+optional = false
+linker = "hoisted"
+saveTextLockfile = true
+auto = "auto"
+exact = true
+registry = "https://registry.npmjs.org/"
+frozenLockfile = false
+
+[define]
+"process.env.NODE_ENV" = "development"
+
+[loader]
+".cab" = "toml"
+".compo" = "tsx"
