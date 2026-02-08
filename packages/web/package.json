@@ -1,22 +1,21 @@
 {
-  "name": "@cable/web",
-  "author": "cainb",
+  "name": "@cb/cable-web",
   "version": "1.0.0",
+  "author": "cainbryce",
   "type": "module",
-  "module": "index.ts",
   "types": "types/index.d.ts",
-  "private": false,
-  "exports": {
-    ".": {
-      "default": "./index.ts",
-      "types": "./types/index.d.ts"
+  "exports":{
+    ".":{
+      "default":"./index.ts",
+      "types":"./types/index.d.ts"
     }
   },
   "scripts": {
-    "build": "bun run ../../scripts/build.ts",
-    "build:watch": "bun --watch run ../../scripts/build.ts",
-    "build:hot": "bun --hot run ../../scripts/build.ts"
-  },
+      "test": "bun test",
+      "version": "npm version patch",
+      "lint":"bunx eslint -v",
+      "format":"bunx prettier --write ."
+    },
   "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {}
