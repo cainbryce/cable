@@ -1,0 +1,39 @@
+{
+  "project_name": "cable",
+  "hidden_files": ["node_modules/**", ".env", "*.env", ".env.*", "dist"],
+  "project_panel": {
+    "auto_fold_dirs": true,
+    "auto_reveal_entries": true,
+    "bold_folder_labels": true,
+    "dock": "right",
+    "hide_root": true,
+    "hide_gitignore": true,
+    "file_icons": false,
+    "folder_icons": true,
+    "entry_spacing": "standard",
+    "git_status": true,
+    "starts_open": false,
+    "show_diagnostics": "errors",
+    "drag_and_drop": false,
+    "hide_hidden": true,
+    "scrollbar": {
+      "show": "system",
+    },
+    "auto_open": {
+      "on_create": true,
+      "on_drop": false,
+      "on_paste": false,
+    },
+  },
+  "outline_panel": {
+    "auto_fold_dirs": true,
+    "auto_reveal_entries": true,
+    "dock": "left",
+    "folder_icons": false,
+    "file_icons": false,
+    "expand_outlines_with_depth": 1,
+    "scrollbar": {
+      "show": "never",
+    },
+  },
+}
