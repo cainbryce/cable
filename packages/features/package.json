@@ -1,0 +1,19 @@
+{
+  "name": "@cb/cable-features",
+  "author": "cainbryce",
+  "version": "1.0.0",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "module": "index.ts",
+  "exports": {
+    ".": {
+      "default": "./index.ts",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bun build index.ts --out-dir dist --minify --target bun --format esm --bytecode --sourcemap 'inline'",
+    "format": "prettier --write .",
+    "test": "bun test"
+  }
+}
