@@ -1,33 +1,38 @@
 telemetry = false
-
-smol = false
-
+logLevel = "debug"
 preload = []
+smol = false
 
 jsx = "react"
 jsxFactory = "h"
 jsxFragment = "Fragment"
 jsxImportSource = "react"
 
-[run]
-bun = true
-shell = "system"
-
-[install]
-production = false
-peer = true
-dev = true
-optional = false
-linker = "hoisted"
-saveTextLockfile = true
-auto = "auto"
-exact = true
-registry = "https://registry.npmjs.org/"
-frozenLockfile = false
+[loader]
+".cb" = "file"
 
 [define]
 "process.env.NODE_ENV" = "development"
 
-[loader]
-".cab" = "toml"
-".compo" = "tsx"
+[test]
+coverageThreshold = { lines = 0.75, statements = 0.75, function = 0.75 }
+coverage = true
+coverageDir = "coverage"
+coveragePathIgnorePatterns = []
+coverageReporter = ["lcov", "text"]
+coverageSkipTestFiles = false
+
+[run]
+bun = true
+shell = "bun"
+silent = false
+
+[install]
+saveTextLockfile = true
+optional = false
+dev = true
+production = false
+peer = true
+frozenLockfile = false
+linker = "hoisted"
+auto = "auto"
