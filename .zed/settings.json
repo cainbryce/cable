@@ -17,13 +17,13 @@
     "drag_and_drop": false,
     "hide_hidden": true,
     "scrollbar": {
-      "show": "system",
+      "show": "system"
     },
     "auto_open": {
       "on_create": true,
       "on_drop": false,
-      "on_paste": false,
-    },
+      "on_paste": false
+    }
   },
   "outline_panel": {
     "auto_fold_dirs": true,
@@ -33,7 +33,7 @@
     "file_icons": false,
     "expand_outlines_with_depth": 1,
     "scrollbar": {
-      "show": "never",
-    },
-  },
+      "show": "never"
+    }
+  }
 }
