@@ -4,18 +4,18 @@
   "author": "cainbryce",
   "type": "module",
   "types": "types/index.d.ts",
-  "exports":{
-    ".":{
-      "default":"./index.ts",
-      "types":"./types/index.d.ts"
+  "exports": {
+    ".": {
+      "default": "./index.ts",
+      "types": "./types/index.d.ts"
     }
   },
   "scripts": {
-      "test": "bun test",
-      "version": "npm version patch",
-      "lint":"bunx eslint -v",
-      "format":"bunx prettier --write ."
-    },
+    "test": "bun test",
+    "version": "npm version patch",
+    "lint": "bunx eslint -v",
+    "format": "bunx prettier --write ."
+  },
   "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {}
